@@ -4,7 +4,7 @@ This is a simple Dad Jokes Generator that generates random dad jokes with a clic
 
 ## Demo
 
-![Demo Screenshot](./img/demo-screenshot.png)
+![Demo Screenshot](/img/demo-screenshot.png)
 
 ## Features
 
@@ -17,10 +17,6 @@ This is a simple Dad Jokes Generator that generates random dad jokes with a clic
 - HTML
 - CSS
 - JavaScript
-
-## Getting Started
-
-These instructions will help you get a copy of the Dad Jokes Generator up and running on your local machine.
 
 ### Prerequisites
 
