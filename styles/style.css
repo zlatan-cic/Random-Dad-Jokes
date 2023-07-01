@@ -9,54 +9,82 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-html{
+html {
   font-size: 65.5%;
 }
 
 body {
-  background-color: #4ab0eb;
-
+  background-color: #aaddfa;
+  transition: background-color 0.3s ease;
 }
-
-/* .fade-in {
-  transition: opacity 0.3s ease-in;
-} */
-
 
 .container {
   height: 100vh;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
 
-article{
-  border: 2px solid;
+article {
+  border: 1px solid #0c88ee;
+  background-color: #379ef3;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 1rem;
   padding: 1rem;
+  -webkit-box-shadow: -1px 5px 14px -2px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -1px 5px 14px -2px rgba(0, 0, 0, 0.41);
+  box-shadow: -1px 5px 14px -2px rgba(0, 0, 0, 0.41);
 }
 
-.text-joke{
-  border: 1px solid;
+.text-joke {
+  /* border: 1px solid; */
   text-align: center;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #222;
+  line-height: 1.5;
 }
 
-.btn{
-  /* background-color: blue; */
-  margin-top: 1rem;
-  font-size: 1.2rem;
+.btn {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
   background-color: #222;
   border: none;
   border-radius: 5px;
   width: 20rem;
   height: 4rem;
   color: #FFF;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #FFF;
+  color: #222;
+
+}
+
+.btn:active {
+  background-color: #4ab0eb;
+}
+
+
+/* Media query for tablet screens */
+@media (min-width: 768px) {
+  article {
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 25rem;
+  }
+
+  .text-joke{
+    /* color: #0c88ee; */
+    font-size: 3rem;
+  }  
 }

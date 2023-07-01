@@ -181,7 +181,20 @@ function generateDadJokes() {
 
 jokeDisplay.style.transition = "opacity 0.3s ease-in";
 
+let colorGenerator = () => {
+  let letters = "0123456789ABCDEF";
+  let color = '#';
+
+  for(let i = 0; i < 6; i++){
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color
+}
+
 btn.addEventListener("click", () => {
+  let body = document.body;
+  let randomColor = colorGenerator();
+  
   const dadJokes = generateDadJokes();
   jokeDisplay.style.opacity = 0;
 
@@ -189,4 +202,7 @@ btn.addEventListener("click", () => {
     jokeDisplay.innerHTML = "&ldquo;" + dadJokes + "&rdquo;";
     jokeDisplay.style.opacity = 1;
   }, 500);
+
+  body.style.backgroundColor = randomColor;
+
 });
